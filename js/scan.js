@@ -54,6 +54,46 @@ function orientacao(a, b, r) {
 }
 
 
+async function encontrarAreaSegura(entrada, pontos) {
+  // console.log("check");
+   //console.log(pontos);
+   var stack = [pontos[0], pontos[1]];
+   var procura = 2;
+   var contador = 2;
+   conecta(entrada, stack, false);
+   await tempo(time);
+   while(true) {
+       var check = false;
+       if (procura == (pontos.length)) {
+           break;
+       }
+       if (orientacao(stack[contador - 2], stack[contador - 1], pontos[procura]) == -1) {
+           stack.push(pontos[procura]);
+           contador++;
+       } else {
+           contador--;
+           stack.pop();
+           check = true;
+       }
+       var s = stack.slice();
+       
+       if (!check) {
+           procura++;
+       }
+       conecta(entrada, stack, false);
+       await tempo(time);
+       
+   }
+   stack.push(stack[0]);
+   await tempo(time);
+   conecta(entrada, stack, true);
+   //console.log(procura);
+   show();
+   return stack;
+}
+
+
+
 var maisdaborda;
 var pontos = [];
 var text = "";
