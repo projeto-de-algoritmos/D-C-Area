@@ -41,7 +41,7 @@ function conecta(entrada, stack, condicao) {
       }
   } else {
       for (var i = 0; i < stack.length - 1; i++) {  
-          x = x + "<svg width='1800' height='1000' style='position: absolute'><line x1='" + (stack[i][0] + 2)+ "' y1='" + (stack[i][1] + 2) + "' x2='" + (stack[i + 1][0] + 2) + "' y2='" + (stack[i + 1][1] + 2) + "' stroke='green'/></svg>"
+          x = x + "<svg width='1800' height='1000' style='position: absolute'><line x1='" + (stack[i][0] + 2)+ "' y1='" + (stack[i][1] + 2) + "' x2='" + (stack[i + 1][0] + 2) + "' y2='" + (stack[i + 1][1] + 2) + "' stroke='red'/></svg>"
       }
   }
   document.getElementById("main").innerHTML = x;
