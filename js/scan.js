@@ -1,3 +1,9 @@
+// para alterar o tempo (em ms)
+var time = 5;
+
+function tempo(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 function coordenadas(inside) {
   let value = Math.random();
 
