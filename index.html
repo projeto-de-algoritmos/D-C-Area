@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Área Segura</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body onload="tela();">
+    <div id="tela">
+      <div class="title">
+        <div style="float: left; margin-left: 10%; margin-right: 30%">
+          <h3>Área segura</h3>
+        </div>
+        
+        <div class="menu" id="menu">
+          <p onclick="scanear()">Scanear área</p>
+        </div>
+      </div>
+    </div>
+    <div id="main"></div>
+  </body>
+  <script src="js/scan.js"></script>
+</html>
