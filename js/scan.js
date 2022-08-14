@@ -37,3 +37,21 @@ function tela() {
 
   document.getElementById("main").innerHTML = element;
 }
+
+function escondebotao() {
+  document.getElementById("menu").style.display = "none";
+}
+
+function scanear() {
+  document.getElementById("main").innerHTML = "";
+  escondebotao();
+  tela();
+  pontos.sort(function(a, b) {return a[1] - b[1]});
+  maisdaborda = pontos[0];
+  pontos.splice(0, 1);
+
+  pontos.sort(compara);
+  pontos.unshift(maisdaborda);
+  var stack = encontrarAreaSegura(element, pontos);
+  console.log(stack);
+}
