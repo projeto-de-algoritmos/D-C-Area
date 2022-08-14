@@ -18,6 +18,12 @@ function coordenadas(inside) {
   return value * 1800;
 }
 
+function distancia(pontoa, pontob) {
+  var res = ((pontob[0] - pontoa[0]) ** 2) + ((pontob[1] - pontoa[1]) ** 2);
+  res = Math.sqrt(res);
+  return res; 
+}
+
 var maisdaborda;
 var pontos = [];
 var text = "";
