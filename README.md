@@ -18,23 +18,15 @@ Neste projeto do módulo de Dividir e Conquistar, criamos um algoritmo baseado n
 
 ### Figura 1: Tela Inicial
 
-![Tela Inicial](screenshots/Tela01.png)
+![foto1](https://user-images.githubusercontent.com/38164895/184555781-fc2f7b0a-5881-4c87-a3ce-76fb7934b01b.png)
 
-### Figura 2: Tela com os itens
+### Figura 2: Tela com a aréa sendo scaneada
 
-![Tela Inicial](screenshots/Tela02.png)
+![foto2](https://user-images.githubusercontent.com/38164895/184555793-35d06b7c-230c-4ae9-bb95-080b7922887b.png)
 
-### Figura 3: Tela para o caso de escolhas corretas de itens
+### Figura 3: Área definida
 
-![Tela Inicial](screenshots/Tela03.png)
-
-### Figura 4: Tela para o caso de escolhas erradas de itens
-
-![Tela Inicial](screenshots/Tela04.png)
-
-### Figura 5: Tela com os itens que você adicionou e os itens que deveriam ter sido adicionados
-
-![Tela Inicial](screenshots/Tela05.png)
+![foto3](https://user-images.githubusercontent.com/38164895/184555811-9ca22529-1011-4c8b-8418-f00f252703af.png)
 
 ## Instalação 
 **Linguagem**: Javascript<br>
