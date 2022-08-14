@@ -47,6 +47,13 @@ function conecta(entrada, stack, condicao) {
   document.getElementById("main").innerHTML = x;
 }
 
+function orientacao(a, b, r) {
+  var r = (b[1] - a[1]) * (r[0] - b[0]) - (b[0] - a[0]) * (r[1] - b[1]);
+  if (r == 0) return 0;
+  return (r > 0) ? 1 : -1;
+}
+
+
 var maisdaborda;
 var pontos = [];
 var text = "";
