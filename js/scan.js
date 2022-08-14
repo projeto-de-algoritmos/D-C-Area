@@ -24,6 +24,15 @@ function distancia(pontoa, pontob) {
   return res; 
 }
 
+function compara(pontoa, pontob) { 
+  var ponto = maisdaborda;
+  var o = orientacao(ponto, pontoa, pontob); 
+  if (o == 0) 
+    return (distancia(ponto, pontob) >= distancia(ponto, pontoa))? -1 : 1; 
+ return (o == -1)? -1: 1; 
+}
+
+
 var maisdaborda;
 var pontos = [];
 var text = "";
