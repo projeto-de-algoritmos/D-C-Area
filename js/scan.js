@@ -26,13 +26,12 @@ function tela() {
 
   for (let i = 0; i < total; i++) {
     element =   element + 
-    ```
-    <div 
+    `<div 
       id='point'${Math.abs(Math.round(pontos[i][0]))}
       class='point' 
       style='margin-left: ${pontos[i][0]}px; margin-top: ${pontos[i][1]}px; z-index: ${i}'
     ></div>
-    ```;
+    `;
   }
 
   document.getElementById("main").innerHTML = element;
