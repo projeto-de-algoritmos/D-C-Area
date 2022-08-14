@@ -1,45 +1,60 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# Pts-Area
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: undefined<br>
+**Conteúdo da Disciplina**: Dividir e Conquistar (Divider & Conquer)<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 19/0012200  | Douglas da Silva Monteles |
+| 17/0016838  |  Lucas Lopes Xavier |
+
+[Apresentação]()
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Neste projeto do módulo de Dividir e Conquistar, criamos um algoritmo baseado na ideia de Closest Pair of Points que exibe em tela vários pontos distribuídos de forma aleatória e realiza a busca e a conexão de todos os pontos mais distantes na tela, criando uma borda fechada que prende todos os outros pontos.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+### Figura 1: Tela Inicial
+
+![Tela Inicial](screenshots/Tela01.png)
+
+### Figura 2: Tela com os itens
+
+![Tela Inicial](screenshots/Tela02.png)
+
+### Figura 3: Tela para o caso de escolhas corretas de itens
+
+![Tela Inicial](screenshots/Tela03.png)
+
+### Figura 4: Tela para o caso de escolhas erradas de itens
+
+![Tela Inicial](screenshots/Tela04.png)
+
+### Figura 5: Tela com os itens que você adicionou e os itens que deveriam ter sido adicionados
+
+![Tela Inicial](screenshots/Tela05.png)
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Javascript<br>
+**Framework**: Nenhum<br>
+
+### Pré-requisitos
+- Possuir um navegador (De preferencia utilizar o Google Chrome ou derivado)
+
+### Baixando e executando o projeto
+
+  ```
+    git clone https://github.com/projeto-de-algoritmos/D-C-Area.git
+
+    cd D-C-Area    
+  ```
+
+- Abrar a arquivo `index.html` no seu navegador (dois cliques no arquivo)
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Na página inicial, clique em `Scannear Área` para executar o algoritmo que vai conectar todos os pontos mais distantes na página.
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
-
+Utilize o navegador Google Chrome
