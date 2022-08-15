@@ -1,5 +1,6 @@
 // para alterar o tempo (em ms)
-var time = 5;
+var time;
+var total;
 
 function tempo(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -15,7 +16,7 @@ function coordenadas(inside) {
 
   if (value < 0.15 && inside == "left") value = value + 0.05;
 
-  return value * 1800;
+  return value * window.outerWidth;
 }
 
 function distancia(pontoa, pontob) {
@@ -37,11 +38,11 @@ function conecta(entrada, stack, condicao) {
   var x = entrada;
   if (!condicao) {
       for (var i = 0; i < stack.length - 1; i++) {    
-          x = x + "<svg width='1800' height='1000' style='position: absolute'><line x1='" + (stack[i][0] + 2)+ "' y1='" + (stack[i][1] + 2) + "' x2='" + (stack[i + 1][0] + 2) + "' y2='" + (stack[i + 1][1] + 2) + "' stroke='black'/></svg>";
+        x = x + "<svg width=" + (window.outerWidth-20) + " height='1000' style='position: absolute'><line x1='" + (stack[i][0] + 2)+ "' y1='" + (stack[i][1] + 2) + "' x2='" + (stack[i + 1][0] + 2) + "' y2='" + (stack[i + 1][1] + 2) + "' stroke='black'/></svg>";
       }
   } else {
       for (var i = 0; i < stack.length - 1; i++) {  
-          x = x + "<svg width='1800' height='1000' style='position: absolute'><line x1='" + (stack[i][0] + 2)+ "' y1='" + (stack[i][1] + 2) + "' x2='" + (stack[i + 1][0] + 2) + "' y2='" + (stack[i + 1][1] + 2) + "' stroke='red'/></svg>"
+        x = x + "<svg width=" + (window.outerWidth-20) + " height='1000' style='position: absolute'><line x1='" + (stack[i][0] + 2)+ "' y1='" + (stack[i][1] + 2) + "' x2='" + (stack[i + 1][0] + 2) + "' y2='" + (stack[i + 1][1] + 2) + "' stroke='green'/></svg>"
       }
   }
   document.getElementById("main").innerHTML = x;
@@ -98,10 +99,24 @@ var maisdaborda;
 var pontos = [];
 var text = "";
 
+function setSegundos() {
+  let seg = document.getElementById('opc-tempo');
+  time = seg.value;
+}
+
+function setTotalPts() {
+  let tot = document.getElementById('opc-pts');
+  total = tot.value;
+}
+
 function tela() {
   pontos = [];
   element = "";
-  var total = 200;
+  
+  setSegundos();
+
+  setTotalPts();
+
   for (let i = 0; i < total; i++) {
     pontos.push([coordenadas("left"), coordenadas("top")]);
   }
@@ -121,6 +136,8 @@ function tela() {
 
 function escondebotao() {
   document.getElementById("menu").style.display = "none";
+  document.getElementById('opc-tempo').style.display = 'none';
+  document.getElementById('opc-pts').style.display = 'none';
 }
 
 function scanear() {

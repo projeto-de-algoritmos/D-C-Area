@@ -13,11 +13,29 @@
   <body onload="tela();">
     <div id="tela">
       <div class="title">
-        <div style="float: left; margin-left: 10%; margin-right: 30%">
+        <div>
           <h3>Área segura</h3>
         </div>
+
+        <div style="display: flex; gap: 12px;">
+          <select id="opc-tempo" onchange="setSegundos()">
+              <option value="0">Tempo normal</option>
+              <option value="200">2 seg</option>
+              <option value="1000">10 seg</option>
+              <option value="1500">15 seg</option>
+          </select>
+
+          <select id="opc-pts" onchange="tela();">
+              <option value="50">50 pts</option>
+              <option value="100">100 pts</option>
+              <option value="200">200 pts</option>
+              <option value="300">300 pts</option>
+              <option value="400">400 pts</option>
+              <option value="1000">1000 pts</option>
+          </select>
+      </div>
         
-        <div class="menu" id="menu">
+        <div id="menu">
           <p onclick="scanear()">Scanear área</p>
         </div>
       </div>
